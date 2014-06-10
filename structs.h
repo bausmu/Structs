@@ -2,16 +2,15 @@
 
 typedef struct eruption
 {
-    char* event;
-    float years_ago;
-    float vi_mag;
-    float TME_km3;
-    char* Geo_Era;
-    char* Geo_Period;
-    char* Geo_Epoch;
-    char* Location;
-    char* Country;
-    char* Continent;
+    char* event; // Title of eruption event
+    char* Location; // Location
+    char* Country; // Country
+    char* Continent; // Continent
+    float years_ago; // Years before present day (present day being 2014)
+    float vi_mag; // Volcanic Index (VI) Magnitude
+    float TME_km3; // Total Mass Ejected
+    char* Geo_Period; // Geologic Time Period
+    char* Geo_Epoch; // Geologic Epoch
     struct eruption* next;
 }eruption;
 
