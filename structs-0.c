@@ -50,7 +50,7 @@ int main (void)
     // Printout of each event
     for (int i = 0; i < ERUPTIONS; i++)
     {
-        printf("\n========== Eruption # %i: %s==========\n\n\n\n", i + 1, eruptions[i].event);
+        printf("\n========== Eruption # %i: %s ==========\n\n\n\n", i + 1, eruptions[i].event);
         printf("Years ago: %.0f\n", eruptions[i].years_ago);
         printf("Location: %s, %s, %s\n", eruptions[i].Location, eruptions[i].Country, eruptions[i].Continent);
         printf("Period: %s\n", eruptions[i].Geo_Period);
