@@ -50,13 +50,13 @@ int main (void)
     // Printout of each event
     for (int i = 0; i < ERUPTIONS; i++)
     {
-        printf("\n========== Eruption # %i: %s==========\n\n\n\n", i, eruptions[i].event);
-        printf("Years ago: %.3f\n", eruptions[i].years_ago);
+        printf("\n========== Eruption # %i: %s==========\n\n\n\n", i + 1, eruptions[i].event);
+        printf("Years ago: %.0f\n", eruptions[i].years_ago);
         printf("Location: %s, %s, %s\n", eruptions[i].Location, eruptions[i].Country, eruptions[i].Continent);
         printf("Period: %s\n", eruptions[i].Geo_Period);
         printf("Epoch: %s\n", eruptions[i].Geo_Epoch); 
-        printf("Magnitude: %.2f\n", eruptions[i].vi_mag);
-        printf("Total Mass Ejecta emitted: %.2f\n", eruptions[i].TME_km3);
+        printf("Magnitude: %.1f\n", eruptions[i].vi_mag);
+        printf("Total Mass Ejecta emitted: %.1f\n", eruptions[i].TME_km3);
         printf("\n\n\n");
     }
     
